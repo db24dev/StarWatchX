@@ -109,7 +109,7 @@ Desktop.ini
 *.iws
 out/
 
-# VSCode / Cursor
+# VSCode/
 .vscode/
 *.code-workspace
 
