@@ -1,0 +1,66 @@
+StarWatchX Demo Script
+======================
+
+Demo Overview:
+--------------
+This demo showcases the real-time object detection and tracking capabilities
+of StarWatchX, including trajectory prediction and telemetry visualization.
+
+Demo Steps:
+-----------
+
+1. System Startup
+   - Start Java engine: `cd java-engine && java -jar starwatchx.jar`
+   - Start dashboard: `cd dashboard && npm run dev`
+   - Open browser to http://localhost:3000
+
+2. Load Demo Footage
+   - Use sample footage from /dashboard/public/videos/
+   - Or connect to live camera feed
+   - Recommended: aerial footage with moving objects
+
+3. Detection Demo
+   - Show real-time object detection with bounding boxes
+   - Highlight confidence scores and class labels
+   - Demonstrate multi-object tracking
+
+4. Tracking & Prediction
+   - Enable Kalman filter tracking
+   - Show trajectory prediction (5-10 frames ahead)
+   - Visualize predicted path overlays
+
+5. Telemetry Dashboard
+   - Show real-time telemetry panel
+   - Display FPS, detection count, confidence metrics
+   - Show telemetry log with position and velocity data
+
+6. Performance Metrics
+   - Display processing latency
+   - Show detection accuracy
+   - Demonstrate system scalability
+
+Key Features to Highlight:
+--------------------------
+✓ Real-time YOLO object detection
+✓ Kalman filter-based tracking
+✓ Trajectory prediction algorithm
+✓ WebSocket telemetry streaming
+✓ Live dashboard visualization
+✓ HUD overlay rendering
+✓ ONNX model inference (Java)
+
+Demo Tips:
+----------
+- Use high-quality footage with clear objects
+- Ensure good lighting conditions
+- Test with various object types
+- Prepare backup footage in case of issues
+- Have screenshots ready for presentation
+
+Expected Results:
+-----------------
+- Detection FPS: 30-60 fps
+- Tracking accuracy: >90%
+- Prediction horizon: 5-10 frames
+- Latency: <50ms end-to-end
+

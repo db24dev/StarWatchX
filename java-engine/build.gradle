@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.starwatchx'
+version = '0.1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // OpenCV + FFmpeg via JavaCPP presets (bundled native libraries)
+    implementation 'org.bytedeco:opencv-platform:4.9.0-1.5.10'
+    implementation 'org.bytedeco:ffmpeg-platform:6.1.1-1.5.10'
+
+    // ONNX Runtime for Java (CPU)
+    implementation 'com.microsoft.onnxruntime:onnxruntime:1.18.0'
+
+    // WebSocket server implementation
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+
+    // JSON serialization for telemetry
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+

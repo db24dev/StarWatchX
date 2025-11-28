@@ -1,0 +1,13 @@
+# STARWATCH-X YOLO dataset definition
+# Images:  dataset/images/{train,val}
+# Labels:  dataset/labels/{train,val}
+
+path: ./dataset
+train: images/train
+val: images/val
+train_labels: labels/train
+val_labels: labels/val
+
+names:
+  - satellite
+  - debris

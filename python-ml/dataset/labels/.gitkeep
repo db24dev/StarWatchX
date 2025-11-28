@@ -1,0 +1,4 @@
+# Place YOLO format labels here
+# Format: class x_center y_center width height (normalized 0-1)
+# Organize in subdirectories: train/, val/, test/
+

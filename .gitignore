@@ -1,0 +1,167 @@
+# ============================================
+# STARWATCH-X - Comprehensive .gitignore
+# ============================================
+
+# ============================================
+# Java / Maven / Gradle
+# ============================================
+target/
+**/target/
+java-engine/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Gradle
+.gradle/
+**/.gradle/
+build/
+**/build/
+!**/src/**/build/
+gradle/wrapper/
+gradlew
+gradlew.bat
+
+# ============================================
+# Python
+# ============================================
+venv/
+.venv/
+**/venv/
+**/.venv/
+python-ml/venv/
+python-ml/.venv/
+python-ml/__pycache__/
+python-ml/*.pyc
+python-ml/*.pyo
+python-ml/*.egg-info/
+python-ml/dist/
+python-ml/build/
+python-ml/.eggs/
+python-ml/weights/
+python-ml/runs/
+*.pt
+*.pth
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================
+# Node.js / Next.js Dashboard
+# ============================================
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+dashboard/.turbo/
+dashboard/.vercel/
+dashboard/.env
+dashboard/.env.local
+dashboard/.env.development.local
+dashboard/.env.test.local
+dashboard/.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+
+# ============================================
+# ONNX Models (large files)
+# ============================================
+*.onnx
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+
+# ============================================
+# OS Generated Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# IDEs and Editors
+# ============================================
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VSCode / Cursor
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# Demo Footage (optional - uncomment if large)
+# ============================================
+# demo/footage/*.mp4
+# demo/footage/*.avi
+# demo/footage/*.mov
+
+# ============================================
+# Misc
+# ============================================
+*.bak
+*.tmp
+*.temp
+.cache/
+*.pid
+.env
+.env.*
+!.env.example
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# Test outputs
+test-results/
+
