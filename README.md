@@ -109,7 +109,7 @@ STARWATCH-X showcases the ability to integrate Java CV pipelines, Python ML work
 
 ---
 
-## Resume Bullets (Copy/Paste)
+## Resume Bullets 
 - Built STARWATCH-X, a multi-camera space-situational-awareness prototype combining Java (OpenCV + ONNX Runtime), Python (YOLOv8), and a TypeScript/Next.js mission-control dashboard.
 - Implemented a real-time detection → tracking → trajectory prediction pipeline with WebSocket telemetry streaming into a custom aerospace-style HUD.
 - Designed and trained a YOLOv8 model, exported it to ONNX, and integrated it into a Java inference engine with a graceful fake-detection fallback.
